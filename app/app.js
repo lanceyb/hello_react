@@ -8,6 +8,6 @@ var ReactDom = require("react-dom");
 var Greeting = require("./greeting");
 
 ReactDom.render(
-  <Greeting name="World"/>,
+  <Greeting name="Sassha"/>,
     document.body
 );

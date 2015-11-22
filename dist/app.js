@@ -53,7 +53,7 @@
 	var ReactDom = __webpack_require__(158);
 	var Greeting = __webpack_require__(159);
 
-	ReactDom.render(React.createElement(Greeting, { name: "World" }), document.body);
+	ReactDom.render(React.createElement(Greeting, { name: "Sassha" }), document.body);
 
 /***/ },
 /* 1 */
