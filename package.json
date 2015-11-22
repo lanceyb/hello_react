@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
+    "file-loader": "^0.8.4",
     "webpack": "^1.12.8"
   },
   "dependencies": {
