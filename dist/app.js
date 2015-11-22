@@ -44,27 +44,16 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	//es2015
+	//import React from "react";
+	//import ReactDom from "react-dom";
+	//import Greeting from "./greeting";
 
-	var _react = __webpack_require__(1);
+	var React = __webpack_require__(1);
+	var ReactDom = __webpack_require__(158);
+	var Greeting = __webpack_require__(159);
 
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _greeting = __webpack_require__(159);
-
-	var _greeting2 = _interopRequireDefault(_greeting);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	//var React = require("react");
-	//var ReactDom = require("react-dom");
-	//var Greeting = require("./greeting");
-
-	_reactDom2.default.render(_react2.default.createElement(_greeting2.default, { name: "World" }), document.body); //es2015
+	ReactDom.render(React.createElement(Greeting, { name: "World" }), document.body);
 
 /***/ },
 /* 1 */
@@ -19657,39 +19646,32 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	//import React from "react";
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
+	//export default React.createClass({
+	//render: function() {
+	//return (
+	//<div className="greeting">
+	//Hello, {this.props.name}!
+	//</div>
+	//);
+	//},
+	//});
 
-	var _react = __webpack_require__(1);
+	var React = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
+	module.exports = React.createClass({
+	  displayName: "exports",
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: "greeting",
-
-	  render: function render() {
-	    return _react2.default.createElement(
+	  render: function () {
+	    return React.createElement(
 	      "div",
 	      { className: "greeting" },
 	      "Hello, ",
-	      this.props.name,
-	      "!"
+	      this.props.name
 	    );
 	  }
 	});
-
-	//var React = require("react");
-
-	//module.exports = React.createClass({
-	//render: function () {
-	//return <div className="greeting">Hello, {this.props.name}</div>
-	//}
-	//})
 
 /***/ }
 /******/ ]);
