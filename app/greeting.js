@@ -9,3 +9,12 @@ export default React.createClass({
     );
   },
 });
+
+
+//var React = require("react");
+
+//module.exports = React.createClass({
+  //render: function () {
+    //return <div className="greeting">Hello, {this.props.name}</div>
+  //}
+//})
